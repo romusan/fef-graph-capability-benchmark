@@ -73,4 +73,7 @@ hours of wall-clock time; the runs survive suspension, but the wait does not.
 
 ## Licence
 
-To be chosen by the authors before publication.
+MIT. See `LICENSE`. The code may be reused, modified and redistributed,
+including commercially, provided the copyright notice is retained.
+
+If you use it in academic work, please cite the accompanying paper.
