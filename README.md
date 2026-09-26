@@ -1,4 +1,4 @@
-﻿# FEF-Graph â€” code for the capability-benchmark experiments
+# FEF-Graph — code for the capability-benchmark experiments
 
 Code accompanying *Which Planar Mechanism Families Can Draw a Given Closed
 Curve? A Capability Benchmark under Explicit Packaging Limits*.
@@ -13,7 +13,7 @@ to run beside it.
 
 | Script | Experiment |
 |---|---|
-| `campanas/c2_qd_15_semillas.ps1` | Extends both arms of the policy comparison from 3 to 15 seeds. Runs `run_bplus.py` (QD) and `run_e_strict.py` (baseline) on seeds 404â€“1515. |
+| `campanas/c2_qd_15_semillas.ps1` | Extends both arms of the policy comparison from 3 to 15 seeds. Runs `run_bplus.py` (QD) and `run_e_strict.py` (baseline) on seeds 404–1515. |
 | `campanas/c3_presupuesto_igualado.ps1` + `run_bplus_matched.py` | Repeats the QD arm with the archive-search budget cut from 60,000 to 34,000 evaluations, so that total simulations land within 7% of the baseline. Writes `Bmatched_seed<N>.json`; never touches `Bplus_*`. |
 | `campanas/c4_medium_hard_compacto.ps1` | Medium-hard target under the **compact** 180 mm envelope, Watt I, 30 seeds. Replicates the published relaxed campaign field for field, changing only the packaging profile. |
 | `campanas/c5_medium_hard_por_familia.ps1` | Generalises C4 over family and profile. Used for the geared five-bar under both envelopes, completing a two-family by two-envelope design with 30 seeds per cell. |
@@ -25,20 +25,20 @@ the source files each campaign ran against.
 
 Every number in the manuscript tables comes from these, not from hand editing:
 
-- `tablas/aggregate_all_families.py` â€” all eight families on the medium target
+- `tablas/aggregate_all_families.py` — all eight families on the medium target
   (Table 9). Per-family candidates are selected by lowest RMS, the same rule
   `extract_family_rows()` uses in the published statistical runner.
-- `tablas/make_qd_extension_table.py` â€” the three arms of the policy comparison
+- `tablas/make_qd_extension_table.py` — the three arms of the policy comparison
   (Table 10), with Wilson intervals, Fisher exact tests and Holm adjustment
   across the four comparisons of that table.
-- `tablas/make_packaging_table.py` â€” the two-by-two packaging design (Table 7).
-  The envelopes share seeds 1â€“30, so the within-family contrasts are **paired**:
+- `tablas/make_packaging_table.py` — the two-by-two packaging design (Table 7).
+  The envelopes share seeds 1–30, so the within-family contrasts are **paired**:
   exact McNemar for the rates, Wilcoxon signed-rank for the error. Between
   families the samples are independent and Fisher is used.
 
 ## Data
 
-datos/ holds the per-seed outputs of every campaign reported in the paper,
+`datos/` holds the per-seed outputs of every campaign reported in the paper,
 19.5 MB across 1,680 files, with a SHA-256 fingerprint per campaign in
 `datos/MANIFIESTO.json`. See `datos/README.md` for the layout and for which
 table each campaign feeds.
@@ -84,4 +84,4 @@ MIT. See `LICENSE`. The code may be reused, modified and redistributed,
 including commercially, provided the copyright notice is retained.
 
 If you use it in academic work, please cite the accompanying paper.
-
+
