@@ -1,0 +1,159 @@
+[
+  {
+    "target": "easy",
+    "n": 960,
+    "width_mm": 90.0,
+    "height_mm": 50.11132118209582,
+    "polygon_length_mm": 224.80304258170744,
+    "absolute_turn_radians": 6.283185307179586,
+    "proper_segment_crossings": 0,
+    "metadata": {
+      "target_source": "independent_fourier_easy",
+      "target_mode": "easy",
+      "generated_by_stephenson": false,
+      "application": "desktop_curve_tracing_and_low_force_dispensing_demonstrator",
+      "target_width_mm": 90.0,
+      "description": "smooth oval with weak second harmonic",
+      "n_resampled_points": 960,
+      "complexity_metrics": {
+        "perimeter_mm": 224.80304258170744,
+        "perimeter_to_width": 2.4978115842411936,
+        "curvature_mean": 0.006987633974655611,
+        "curvature_p95": 0.0179432945546797,
+        "turning_energy": 1.5762424496584963e-05,
+        "curvature_sign_changes": 0.0
+      },
+      "tolerance_rms_mm": 1.0,
+      "tolerance_max_mm": 2.0
+    }
+  },
+  {
+    "target": "medium",
+    "n": 960,
+    "width_mm": 90.0,
+    "height_mm": 69.42473276802974,
+    "polygon_length_mm": 259.3604304631136,
+    "absolute_turn_radians": 7.984042013765472,
+    "proper_segment_crossings": 0,
+    "metadata": {
+      "target_source": "independent_fourier_medium",
+      "target_mode": "medium",
+      "generated_by_stephenson": false,
+      "application": "desktop_curve_tracing_and_low_force_dispensing_demonstrator",
+      "target_width_mm": 90.0,
+      "description": "asymmetric closed curve with moderate harmonic content",
+      "n_resampled_points": 960,
+      "complexity_metrics": {
+        "perimeter_mm": 259.3604304631136,
+        "perimeter_to_width": 2.8817825607012617,
+        "curvature_mean": 0.00771847097898918,
+        "curvature_p95": 0.01612548748555173,
+        "turning_energy": 0.00011706378642654704,
+        "curvature_sign_changes": 2.0
+      },
+      "tolerance_rms_mm": 1.0,
+      "tolerance_max_mm": 2.0
+    }
+  },
+  {
+    "target": "medium_hard",
+    "n": 960,
+    "width_mm": 90.00000000000001,
+    "height_mm": 63.49434445722416,
+    "polygon_length_mm": 269.17353466120767,
+    "absolute_turn_radians": 8.20457758611134,
+    "proper_segment_crossings": 0,
+    "metadata": {
+      "target_source": "independent_fourier_medium_hard",
+      "target_mode": "medium_hard",
+      "generated_by_stephenson": false,
+      "application": "desktop_curve_tracing_and_low_force_dispensing_demonstrator",
+      "target_width_mm": 90.0,
+      "description": "35 percent interpolation between the moderate and high-curvature benchmarks",
+      "n_resampled_points": 960,
+      "complexity_metrics": {
+        "perimeter_mm": 269.17353466120767,
+        "perimeter_to_width": 2.990817051791196,
+        "curvature_mean": 0.00763026629939347,
+        "curvature_p95": 0.019885936073362993,
+        "turning_energy": 9.955449411716883e-05,
+        "curvature_sign_changes": 6.0
+      },
+      "tolerance_rms_mm": 1.0,
+      "tolerance_max_mm": 2.0
+    }
+  },
+  {
+    "target": "bernoulli",
+    "n": 960,
+    "width_mm": 90.0,
+    "height_mm": 31.81974675725748,
+    "polygon_length_mm": 235.9838129536535,
+    "absolute_turn_radians": 9.424718019692168,
+    "proper_segment_crossings": 0,
+    "metadata": {
+      "target_mode": "bernoulli",
+      "formula": "x=cos(t)/(1+sin(t)^2); y=sin(t)cos(t)/(1+sin(t)^2)",
+      "source": "https://mathshistory.st-andrews.ac.uk/Curves/Lemniscate/",
+      "generated_by_family": false,
+      "raw_samples": 4096,
+      "width_mm": 90.0
+    }
+  },
+  {
+    "target": "rounded_rectangle",
+    "n": 960,
+    "width_mm": 90.0,
+    "height_mm": 58.49999999999547,
+    "polygon_length_mm": 261.8160906772737,
+    "absolute_turn_radians": 6.283185307180292,
+    "proper_segment_crossings": 0,
+    "metadata": {
+      "target_mode": "rounded_rectangle",
+      "formula": "x=sign(cos(t))*sqrt(abs(cos(t))); y=.65*sign(sin(t))*sqrt(abs(sin(t)))",
+      "source": "analytic superellipse, exponent 4, authors specified before evaluation",
+      "generated_by_family": false,
+      "raw_samples": 4096,
+      "width_mm": 90.0
+    }
+  },
+  {
+    "target": "asymmetric_dent",
+    "n": 960,
+    "width_mm": 90.0,
+    "height_mm": 53.29912846701066,
+    "polygon_length_mm": 218.72025884437502,
+    "absolute_turn_radians": 9.320372733577127,
+    "proper_segment_crossings": 0,
+    "metadata": {
+      "target_mode": "asymmetric_dent",
+      "formula": "x=cos(t)+.28*cos(3t+.4); y=.7*sin(t)-.15*sin(2t)",
+      "source": "independent analytic Fourier curve, authors specified before evaluation",
+      "generated_by_family": false,
+      "raw_samples": 4096,
+      "width_mm": 90.0
+    }
+  },
+  {
+    "target": "naca0012_reference",
+    "n": 960,
+    "width_mm": 90.0,
+    "height_mm": 10.707470274309639,
+    "polygon_length_mm": 183.51729435645922,
+    "absolute_turn_radians": 6.283185307179586,
+    "proper_segment_crossings": 0,
+    "metadata": {
+      "target_mode": "naca0012_reference",
+      "source": "https://tmbwg.github.io/turbmodels/naca0012_val.html",
+      "download_url": "https://tmbwg.github.io/turbmodels/NACA0012_grids/n0012points_superbig_clust_fix.dat",
+      "source_context": "NASA-linked Turbulence Modeling Resource, altered sharp-trailing-edge NACA0012 reference geometry",
+      "raw_sha256": "74e147db4fa052be7ab79465a756c55b39b1786bfd7141a86257e89586728ae1",
+      "target_adapter_sha256": "ee7f0bd62519df985222cc09b24eb22346a70bb7c4f89a97cf37c762e42cc711",
+      "raw_points": 12299,
+      "raw_closed": true,
+      "width_mm": 90.0,
+      "measured_trajectory": false,
+      "preprocessing": "drop z=0, preserve contour order, closed arclength resample, center, normalize width; no smoothing or fitted mechanism"
+    }
+  }
+]

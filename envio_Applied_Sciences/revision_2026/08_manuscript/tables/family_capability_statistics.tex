@@ -1,0 +1,25 @@
+\begin{table}[H]
+\caption{Family-level capability statistics over 30 random seeds per row. Root mean square (RMS) pass denotes runs with RMS error at most 1 mm; strict pass also requires maximum error at most 2 mm. Pass counts are out of 30, so the percentages are omitted. Median, IQR and range refer to RMS error; IQR denotes interquartile range. All errors are in millimeters.}
+\label{tab:family_capability_statistics}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrll}
+\hline
+Target & Family & RMS pass & Strict pass & Median & IQR & Range \\
+\hline
+easy & Watt I & 30/30 & 30/30 & 0.022 & [0.015, 0.026] & 0.013--0.065 \\
+easy & Stephenson III & 30/30 & 30/30 & 0.116 & [0.088, 0.149] & 0.039--0.252 \\
+easy & geared five-bar & 26/30 & 26/30 & 0.190 & [0.116, 0.485] & 0.026--1.142 \\
+easy & four-bar & 30/30 & 30/30 & 0.199 & [0.131, 0.258] & 0.061--0.371 \\
+easy & Stephenson I & 30/30 & 30/30 & 0.304 & [0.210, 0.406] & 0.061--0.707 \\
+easy & slider-crank & 30/30 & 30/30 & 0.667 & [0.608, 0.690] & 0.254--0.711 \\
+easy & Stephenson II & 0/30 & 0/30 & 19.005 & [19.002, 19.009] & 18.955--19.075 \\
+easy & Watt II & 1/30 & 1/30 & 19.009 & [18.999, 19.009] & 0.058--19.067 \\
+medium & Watt I & 25/30 & 7/30 & 0.850 & [0.628, 0.952] & 0.248--1.200 \\
+medium & Stephenson III & 2/30 & 0/30 & 1.203 & [1.139, 1.256] & 0.998--1.374 \\
+medium & four-bar & 0/30 & 0/30 & 1.395 & [1.324, 1.400] & 1.277--1.409 \\
+medium-hard & Watt I & 25/30 & 25/30 & 0.414 & [0.268, 0.625] & 0.236--2.025 \\
+\hline
+\end{tabular}
+\end{table}

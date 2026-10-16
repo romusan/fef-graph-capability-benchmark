@@ -1,0 +1,282 @@
+{
+  "packaging": {
+    "wattI": {
+      "n_pareado": 30,
+      "rms": {
+        "mediana_compacto": 0.7205523673814122,
+        "mediana_relativax": 0.4141074486022317,
+        "wilcoxon_p": 0.015460003167390823,
+        "HL_mm": 0.48591286445154225,
+        "HL_ic95": [
+          0.06864989713032849,
+          1.0618444832670781
+        ],
+        "rank_biserial": 0.5010752688172042,
+        "dz": 0.4949857007739046,
+        "dz_ic95_boot": [
+          0.1804351607278588,
+          0.8380025302139338
+        ],
+        "n_aumentan_error": 20,
+        "n_disminuyen": 10
+      },
+      "strict": {
+        "compacto": 19,
+        "relajado": 25,
+        "tabla": [
+          14,
+          11,
+          5,
+          0
+        ],
+        "mcnemar_p": 0.210113525390625,
+        "OR": 0.45454545454545453,
+        "OR_ic95": [
+          0.15793316721518713,
+          1.3082215337733427
+        ],
+        "wilson_compacto": [
+          0.4551356351862472,
+          0.7812607928773656
+        ],
+        "wilson_relativax": [
+          0.6643564934133498,
+          0.9266345767456822
+        ]
+      },
+      "rms_pass": {
+        "compacto": 20,
+        "relajado": 25,
+        "tabla": [
+          15,
+          10,
+          5,
+          0
+        ],
+        "mcnemar_p": 0.30175781249999994,
+        "OR": 0.5,
+        "OR_ic95": [
+          0.17090222403915414,
+          1.4628247315419625
+        ]
+      }
+    },
+    "gearedFiveBar": {
+      "n_pareado": 30,
+      "rms": {
+        "mediana_compacto": 1.2605503352603904,
+        "mediana_relativax": 1.4018540415571072,
+        "wilcoxon_p": 0.3492113798856735,
+        "HL_mm": -0.09555610499534939,
+        "HL_ic95": [
+          -0.3081991587328765,
+          0.13897688097843847
+        ],
+        "rank_biserial": -0.19999999999999996,
+        "dz": -0.04513834276865268,
+        "dz_ic95_boot": [
+          -0.5418518145455338,
+          0.2779565914145771
+        ],
+        "n_aumentan_error": 14,
+        "n_disminuyen": 16
+      },
+      "strict": {
+        "compacto": 3,
+        "relajado": 4,
+        "tabla": [
+          0,
+          4,
+          3,
+          23
+        ],
+        "mcnemar_p": 1.0,
+        "OR": 0.75,
+        "OR_ic95": [
+          0.16785927422712285,
+          3.3510212801165005
+        ],
+        "wilson_compacto": [
+          0.03459988847741868,
+          0.256210827331743
+        ],
+        "wilson_relativax": [
+          0.05309655447112463,
+          0.2968132683539402
+        ]
+      },
+      "rms_pass": {
+        "compacto": 3,
+        "relajado": 5,
+        "tabla": [
+          0,
+          5,
+          3,
+          22
+        ],
+        "mcnemar_p": 0.7265625,
+        "OR": 0.6,
+        "OR_ic95": [
+          0.14339088016280196,
+          2.51061991942072
+        ]
+      }
+    },
+    "holm_packaging": {
+      "wattI:rms": {
+        "p_cruda": 0.015460003167390823,
+        "p_holm": 0.09276001900434494
+      },
+      "wattI:strict": {
+        "p_cruda": 0.210113525390625,
+        "p_holm": 1.0
+      },
+      "wattI:rms_pass": {
+        "p_cruda": 0.30175781249999994,
+        "p_holm": 1.0
+      },
+      "gearedFiveBar:rms": {
+        "p_cruda": 0.3492113798856735,
+        "p_holm": 1.0
+      },
+      "gearedFiveBar:strict": {
+        "p_cruda": 1.0,
+        "p_holm": 1.0
+      },
+      "gearedFiveBar:rms_pass": {
+        "p_cruda": 0.7265625,
+        "p_holm": 1.0
+      }
+    },
+    "discordance_note": "La tabla observada tiene 11 y 5 discordancias, no seis en total. Seis discordancias todas en un sentido dan p bilateral=0.03125 sin ajuste. La diferencia marginal de seis no determina la potencia.",
+    "power_sensitivity": [
+      {
+        "n": 30,
+        "q": 0.2,
+        "alpha": 0.05,
+        "target_power": 0.8,
+        "minimum_delta_for_80pct": null,
+        "power_for_delta_point2": 0.5724875624096786
+      },
+      {
+        "n": 30,
+        "q": 0.2,
+        "alpha": 0.008333333333333333,
+        "target_power": 0.8,
+        "minimum_delta_for_80pct": null,
+        "power_for_delta_point2": 0.2392093813010431
+      },
+      {
+        "n": 30,
+        "q": 0.5333333333333333,
+        "alpha": 0.05,
+        "target_power": 0.8,
+        "minimum_delta_for_80pct": 0.3740277252004792,
+        "power_for_delta_point2": 0.2465479916496412
+      },
+      {
+        "n": 30,
+        "q": 0.5333333333333333,
+        "alpha": 0.008333333333333333,
+        "target_power": 0.8,
+        "minimum_delta_for_80pct": 0.43882180095339807,
+        "power_for_delta_point2": 0.08449051592962484
+      },
+      {
+        "n": 30,
+        "q": 0.8,
+        "alpha": 0.05,
+        "target_power": 0.8,
+        "minimum_delta_for_80pct": 0.4660426496295259,
+        "power_for_delta_point2": 0.16872431590117878
+      },
+      {
+        "n": 30,
+        "q": 0.8,
+        "alpha": 0.008333333333333333,
+        "target_power": 0.8,
+        "minimum_delta_for_80pct": 0.555105105577968,
+        "power_for_delta_point2": 0.050065048441938244
+      }
+    ]
+  },
+  "wattI_medium_campaigns": {
+    "n_pareado": 30,
+    "descripcion_diferencia": "Campañas NO equivalentes: la inicial ejecuta solo wattI con DE 35 iter x pop 7 (~2.9k evals) y flujo aleatorio propio; la all-family ejecuta 8 familias con DE 45 x 9 (~4.9k evals) y el flujo aleatorio de wattI depende de las 3 familias previas.",
+    "strict": {
+      "inicial_7de30": 7,
+      "all8_16de30": 16,
+      "tabla_pareada": [
+        4,
+        12,
+        3,
+        11
+      ],
+      "mcnemar_p": 0.03515625,
+      "OR": 0.25,
+      "OR_ic95": [
+        0.0705491475990546,
+        0.8859072310157513
+      ],
+      "wilson_inicial": [
+        0.11792388080557861,
+        0.40928326306719587
+      ],
+      "wilson_all8": [
+        0.3614229949695976,
+        0.6976761120463056
+      ]
+    },
+    "rms": {
+      "mediana_inicial": 0.8496767441160493,
+      "mediana_all8": 0.7859158976616801,
+      "wilcoxon_p": 0.4161298982799053,
+      "HL_mm": 0.04433045020594856,
+      "HL_ic95": [
+        -0.07961491072687915,
+        0.19429045131779812
+      ]
+    }
+  },
+  "qd_arms": {
+    "Bmatched": {
+      "strict_seeds": 10,
+      "n": 15,
+      "wilson_ic95": [
+        0.4171354755711991,
+        0.8482367565633053
+      ]
+    },
+    "Bplus": {
+      "strict_seeds": 10,
+      "n": 15,
+      "wilson_ic95": [
+        0.4171354755711991,
+        0.8482367565633053
+      ]
+    },
+    "Estrict": {
+      "strict_seeds": 9,
+      "n": 15,
+      "wilson_ic95": [
+        0.35746829954344506,
+        0.8017550397372577
+      ]
+    },
+    "Estrict_vs_Bmatched_pareado": {
+      "tabla": [
+        4,
+        6,
+        5,
+        0
+      ],
+      "mcnemar_p": 1.0,
+      "OR": 0.8333333333333334,
+      "OR_ic95": [
+        0.25432591704284796,
+        2.7305295996532153
+      ],
+      "n_comunes": 15
+    }
+  }
+}

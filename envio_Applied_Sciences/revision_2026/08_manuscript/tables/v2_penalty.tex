@@ -1,0 +1,20 @@
+\begin{table}[H]
+\caption{Controlled singularity-penalty ablation on medium/compact, 20 000 simulator calls and 30 seeds per model. The penalized row is the compatible cumulative checkpoint of the factorial, not a new independent sample. M: retained strict motion-valid; Q: additionally all transmission angles at least 30 degrees. RMS medians in mm. Removal affects both scalar cost and the LS penalty residual.}
+\label{tab:v2_penalty}
+\centering
+\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Model & M pen & Q pen & M no & Q no & RMS pen & RMS no \\
+\midrule
+F4 & 0 & 0 & 0 & 0 & 1.315 & 1.315 \\
+SC & 0 & 0 & 0 & 0 & 1.657 & 1.659 \\
+CD-G & 5 & 0 & 6 & 0 & 1.007 & 1.098 \\
+RC-G & 0 & 0 & 0 & 0 & 1.396 & 1.396 \\
+A-O4 & 0 & 0 & 0 & 0 & 1.375 & 1.375 \\
+B-O2 & 0 & 0 & 0 & 0 & 1.853 & 1.853 \\
+C-O4 & 0 & 0 & 0 & 0 & 1.277 & 1.277 \\
+G5 & 0 & 0 & 0 & 0 & 1.292 & 1.281 \\
+\bottomrule
+\end{tabular}
+\end{table}

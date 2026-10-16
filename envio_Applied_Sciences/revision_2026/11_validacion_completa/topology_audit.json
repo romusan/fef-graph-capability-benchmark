@@ -1,0 +1,293 @@
+{
+  "source": "https://www.sjf.stuba.sk/buxus/docs/pracoviska/ATC/PDF/TM_III/12_L_Synthesis.pdf",
+  "source2": "https://www.sciencedirect.com/science/article/pii/S0094114X15002384",
+  "graphs": {
+    "wattI": {
+      "display": "CD-G",
+      "body_names": [
+        "ground O2-O4-G",
+        "crank O2-A",
+        "coupler A-B-C",
+        "rocker B-O4",
+        "dyad C-D",
+        "dyad D-G"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "coincident_hinges": false,
+      "degree_sequence": [
+        3,
+        2,
+        3,
+        2,
+        2,
+        2
+      ],
+      "ternary_bodies": [
+        0,
+        2
+      ],
+      "ternary_adjacent": false,
+      "chain_class": "Stephenson",
+      "generic_mobility": 1
+    },
+    "wattII": {
+      "display": "RC-G",
+      "body_names": [
+        "ground O2-O4-G",
+        "crank O2-A",
+        "coupler A-B",
+        "rocker B-O4-C",
+        "dyad C-D",
+        "dyad D-G"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "coincident_hinges": false,
+      "degree_sequence": [
+        3,
+        2,
+        2,
+        3,
+        2,
+        2
+      ],
+      "ternary_bodies": [
+        0,
+        3
+      ],
+      "ternary_adjacent": true,
+      "chain_class": "Watt",
+      "generic_mobility": 1
+    },
+    "stephensonI": {
+      "display": "A-O4",
+      "body_names": [
+        "ground O2-O4-O4",
+        "crank O2-A-A",
+        "coupler A-B",
+        "rocker B-O4",
+        "dyad A-D",
+        "dyad D-O4"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "coincident_hinges": true,
+      "degree_sequence": [
+        3,
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "ternary_bodies": [
+        0,
+        1
+      ],
+      "ternary_adjacent": true,
+      "chain_class": "Watt",
+      "generic_mobility": 1
+    },
+    "stephensonII": {
+      "display": "B-O2",
+      "body_names": [
+        "ground O2-O4-O2",
+        "crank O2-A",
+        "coupler A-B-B",
+        "rocker B-O4",
+        "dyad B-D",
+        "dyad D-O2"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "coincident_hinges": true,
+      "degree_sequence": [
+        3,
+        2,
+        3,
+        2,
+        2,
+        2
+      ],
+      "ternary_bodies": [
+        0,
+        2
+      ],
+      "ternary_adjacent": false,
+      "chain_class": "Stephenson",
+      "generic_mobility": 1
+    },
+    "stephensonIII": {
+      "display": "C-O4",
+      "body_names": [
+        "ground O2-O4-O4",
+        "crank O2-A",
+        "coupler A-B-C",
+        "rocker B-O4",
+        "dyad C-D",
+        "dyad D-O4"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "coincident_hinges": true,
+      "degree_sequence": [
+        3,
+        2,
+        3,
+        2,
+        2,
+        2
+      ],
+      "ternary_bodies": [
+        0,
+        2
+      ],
+      "ternary_adjacent": false,
+      "chain_class": "Stephenson",
+      "generic_mobility": 1
+    }
+  },
+  "conclusion": "Legacy IDs do not represent five distinct classical six-bar inversions. Use explicit model labels.",
+  "scope": "Graph classification; coincident-joint specializations and tracer dependence stated separately."
+}

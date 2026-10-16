@@ -1,0 +1,20 @@
+\begin{table}[H]
+\caption{Independent optimizer comparison under compact bounds and exactly 20 000 simulator calls per model/seed. The first four numerical columns refer to medium, the last four to medium-hard (MH). H denotes the hybrid engine and C denotes official pycma. M counts retained strict designs passing full-cycle checks; each count is out of 30. RMS is in mm.}
+\label{tab:v2_independent}
+\centering
+\small
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+& \multicolumn{4}{c}{Medium} & \multicolumn{4}{c}{Medium-hard} \\ \cmidrule(lr){2-5}\cmidrule(lr){6-9} Model & M H & M C & RMS H & RMS C & M H & M C & RMS H & RMS C \\
+\midrule
+F4 & 0 & 0 & 1.315 & 1.384 & 0 & 0 & 4.708 & 5.070 \\
+SC & 0 & 0 & 1.657 & 1.672 & 0 & 0 & 4.674 & 4.703 \\
+CD-G & 5 & 3 & 1.007 & 1.291 & 21 & 5 & 0.714 & 2.814 \\
+RC-G & 0 & 0 & 1.396 & 25.252 & 0 & 0 & 5.273 & 24.120 \\
+A-O4 & 0 & 0 & 1.375 & 1.388 & 0 & 0 & 4.987 & 5.308 \\
+B-O2 & 0 & 0 & 1.853 & 25.242 & 0 & 0 & 6.013 & 23.741 \\
+C-O4 & 0 & 0 & 1.277 & 1.350 & 0 & 0 & 2.825 & 4.058 \\
+G5 & 0 & 0 & 1.292 & 1.370 & 0 & 0 & 1.876 & 3.030 \\
+\bottomrule
+\end{tabular}
+\end{table}

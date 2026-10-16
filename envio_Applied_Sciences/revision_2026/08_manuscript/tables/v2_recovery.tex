@@ -1,0 +1,20 @@
+\begin{table}[H]
+\caption{Own-curve diagnostic: one feasible generator and one separate inverse search per model (80 000 simulator calls). Generator vectors are withheld from search. A denotes any encountered strict candidate; M denotes the retained best candidate being strict and motion-valid. The identity error is a consistency check, not optimization recovery.}
+\label{tab:v2_recovery}
+\centering
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Model & Identity RMS & Inverse RMS & Inverse max & A & M \\
+\midrule
+F4 & 1.0e-15 & 0.061 & 0.179 & 1 & 1 \\
+SC & 1.3e-15 & 0.000 & 0.000 & 1 & 1 \\
+CD-G & 1.8e-15 & 0.001 & 0.004 & 1 & 1 \\
+RC-G & 0.0e+00 & 0.002 & 0.006 & 1 & 1 \\
+A-O4 & 1.4e-15 & 0.037 & 0.092 & 1 & 1 \\
+B-O2 & 9.6e-16 & 0.013 & 0.037 & 1 & 1 \\
+C-O4 & 8.3e-16 & 0.010 & 0.020 & 1 & 1 \\
+G5 & 6.5e-16 & 0.155 & 0.415 & 1 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}

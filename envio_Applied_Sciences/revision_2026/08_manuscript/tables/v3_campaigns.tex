@@ -1,0 +1,20 @@
+\begin{table}[H]
+\caption{Campaign inventory. The factorial checkpoints reuse the same searches and are not additional independent runs. The 1200-target block comprises five separate 240-run campaigns. Every numerical budget counts simulator invocations, including invalid states and refinement.}
+\label{tab:v3_campaigns}
+\centering
+\small
+\begin{tabular}{@{}p{9.0cm}rr@{}}
+\toprule
+Campaign & Runs & Calls per run \\
+\midrule
+Factorial: 8 models $\times$ 2 targets $\times$ 2 profiles $\times$ 30 seeds & 960 & 40 000 \\
+Independent CMA-ES: 8 $\times$ 2 $\times$ 30 & 480 & 20 000 \\
+Easy + 3 new analytic + NACA0012: 8 $\times$ 5 $\times$ 30 & 1200 & 20 000 \\
+Penalty ablation without singularity term: 8 $\times$ 30 & 240 & 20 000 \\
+\textbf{Main model-level total} & \textbf{2880} &  \\
+Additional repetition batches (separate) & 60 & 20 000 \\
+Own-curve diagnostic searches (separate) & 8 & 80 000 \\
+Multi-model QD policy/grid runs (separate) & 240 & 40 000 total \\
+\bottomrule
+\end{tabular}
+\end{table}

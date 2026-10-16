@@ -1,0 +1,44 @@
+\begin{table}[H]
+\caption{Design-variable parameterization of the eight families. All
+families share the same frame convention: the input crank pivots at
+$O_2=(0,0)$ and the second fixed pivot lies on the $x$-axis
+($O_4=(L_0,0)$ or $O_4=(L_1,0)$); the input link is always the crank
+at $O_2$, driven uniformly over $[0,2\pi)$. Tracer offsets $(p_u,p_v)$
+are measured in the local frame of the coupler link carrying the
+tracer point $P$. Bounds are the compact-profile search bounds in
+millimetres. A candidate is invalid when any loop-closure circle
+intersection fails over the cycle, when a numerical degeneracy occurs
+(zero-length direction vector), or when the slider-crank closure
+radicand is negative; invalid candidates are never scored on accuracy.}
+\label{tab:parameterization}
+\centering
+\small
+\begin{tabular}{@{}llll@{}}
+\hline
+Family ($d$) & Variables & Meaning & Bounds (compact) \\ \hline
+four-bar (6) & $L_1,L_2,L_3,L_4$ & ground, crank, coupler, rocker & $35\!\le\!L_1\!\le\!150$; $12\!\le\!L_2\!\le\!90$; \\
+ & $r_P,\phi_P$ & tracer offset on coupler & $20\!\le\!L_3,L_4\!\le\!165$; $0\!\le\!r_P\!\le\!150$ \\
+slider-crank (5) & $r,\ell$ & crank radius, connecting rod & $8\!\le\!r\!\le\!80$; $25\!\le\!\ell\!\le\!210$ \\
+ & $q,h,x_0$ & tracer fraction on rod, normal offset, & $-0.30\!\le\!q\!\le\!1.35$; $|h|\!\le\!60$; \\
+ & & slider datum offset & $|x_0|\!\le\!60$ \\
+Watt I (12) & $L_0,L_2,L_3,L_4$ & loop 1: ground, crank, coupler, rocker & $35\!\le\!L_0\!\le\!160$; $12\!\le\!L_2\!\le\!95$; \\
+ & $r_c,\phi_c$ & point $C$ fixed on coupler $AB$ & $20\!\le\!L_3,L_4\!\le\!180$; $0\!\le\!r_c\!\le\!150$ \\
+ & $g_x,g_y$ & second ground pivot $G$ & $-40\!\le\!g_x\!\le\!210$; $|g_y|\!\le\!90$ \\
+ & $L_5,L_6$ & second dyad $C\!-\!D\!-\!G$ & $20\!\le\!L_5,L_6\!\le\!180$ \\
+ & $p_u,p_v$ & tracer on link $CD$ & $-50\!\le\!p_u\!\le\!180$; $|p_v|\!\le\!80$ \\
+Watt II (12) & idem Watt I & with $C$ rigid to rocker $BO_4$ & same as Watt I \\
+ & & (offset from $B$ along $B\!\to\!O_4$) & \\
+Stephenson I (8) & $L_0,L_2,L_3,L_4$ & loop 1 (as above) & $35\!\le\!L_0\!\le\!160$; $12\!\le\!L_2\!\le\!95$; \\
+ & $L_5,L_6$ & dyad from $A$ to ground $O_4$ & $20\!\le\!L_3,L_4,L_5,L_6\!\le\!180$ \\
+ & $p_u,p_v$ & tracer on that dyad's coupler & $-50\!\le\!p_u\!\le\!180$; $|p_v|\!\le\!80$ \\
+Stephenson II (8) & idem Stephenson I & dyad from $B$ to ground $O_2$ & same as Stephenson I \\
+Stephenson III (10) & $L_0,L_2,L_3,L_4$ & loop 1 (as above) & $35\!\le\!L_0\!\le\!160$; $12\!\le\!L_2\!\le\!95$; \\
+ & $r_c,\phi_c$ & point $C$ fixed on coupler $AB$ & $20\!\le\!L_3,L_4\!\le\!180$; $0\!\le\!r_c\!\le\!150$ \\
+ & $L_5,L_6$ & dyad from $C$ to ground $O_4$ & $20\!\le\!L_5,L_6\!\le\!180$ \\
+ & $p_u,p_v$ & tracer on that dyad's coupler & $-30\!\le\!p_u\!\le\!180$; $|p_v|\!\le\!70$ \\
+geared five-bar (9) & $L_0,L_2,L_4$ & ground, crank 1, crank 2 & $35\!\le\!L_0\!\le\!160$; $10\!\le\!L_2,L_4\!\le\!95$ \\
+ & $L_3,L_5$ & couplers to joint $C$ & $20\!\le\!L_3,L_5\!\le\!180$ \\
+ & ratio, phase & gear ratio and phase of crank 2 & $|\mathrm{ratio}|\!\le\!3$; $|\mathrm{phase}|\!\le\!\pi$ \\
+ & $r_p,\phi_p$ & tracer offset on coupler $AC$ & $0\!\le\!r_p\!\le\!150$ \\ \hline
+\end{tabular}
+\end{table}

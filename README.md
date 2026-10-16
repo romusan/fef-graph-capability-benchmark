@@ -1,87 +1,52 @@
-# FEF-Graph — code for the capability-benchmark experiments
+# FEF-Graph: corrected Applied Sciences revision
 
-Code accompanying *Which Planar Mechanism Families Can Draw a Given Closed
-Curve? A Capability Benchmark under Explicit Packaging Limits*.
+This branch supports **Planar Path Synthesis Across Eight Kinematic Models: Search Budget, Closed-Cycle Validity and Quality Diversity**, manuscript applsci-4642776.
 
-This repository holds **only the campaign, aggregation and verification code
-written for the experiments added to the manuscript**. The synthesis engine
-itself (`fef_mechanism_family_synthesis.py`, the C++ geometry core and the
-MAP-Elites harness) is not duplicated here; these scripts import it and expect
-to run beside it.
+The historical `main` branch is preserved. This revision repairs slider-crank rigid geometry and geared-five-bar one-turn periodicity, reconstructs model identities, and separates fitting accuracy, sampled cycle validity and all-dyad transmission quality. Legacy names are software identifiers, not eight distinct classical mechanism families. Historical data in `datos/` are retained as historical evidence.
 
-## What each campaign does
+## Read the paper and evidence
 
-| Script | Experiment |
-|---|---|
-| `campanas/c2_qd_15_semillas.ps1` | Extends both arms of the policy comparison from 3 to 15 seeds. Runs `run_bplus.py` (QD) and `run_e_strict.py` (baseline) on seeds 404–1515. |
-| `campanas/c3_presupuesto_igualado.ps1` + `run_bplus_matched.py` | Repeats the QD arm with the archive-search budget cut from 60,000 to 34,000 evaluations, so that total simulations land within 7% of the baseline. Writes `Bmatched_seed<N>.json`; never touches `Bplus_*`. |
-| `campanas/c4_medium_hard_compacto.ps1` | Medium-hard target under the **compact** 180 mm envelope, Watt I, 30 seeds. Replicates the published relaxed campaign field for field, changing only the packaging profile. |
-| `campanas/c5_medium_hard_por_familia.ps1` | Generalises C4 over family and profile. Used for the geared five-bar under both envelopes, completing a two-family by two-envelope design with 30 seeds per cell. |
+- [Clean revised manuscript](envio_Applied_Sciences/revision_2026/08_manuscript/manuscrito_applied_sciences.pdf)
+- [Revision-highlighted manuscript](envio_Applied_Sciences/revision_2026/08_manuscript/manuscrito_applied_sciences_CAMBIOS.pdf)
+- [Evidence index](envio_Applied_Sciences/revision_2026/15_auditoria_reenvio/INDEX_EVIDENCIAS.md)
+- [Complete analysis](envio_Applied_Sciences/revision_2026/13_cierre_editorial/results/analysis_v2.json)
+- [Statistical contrasts](envio_Applied_Sciences/revision_2026/13_cierre_editorial/results/extended_analysis_v2.json)
+- [Model and repetition diagnosis](envio_Applied_Sciences/revision_2026/15_auditoria_reenvio/model_diagnostics.json)
 
-The `*_manifiesto.json` files record the seed list and a SHA-256 fingerprint of
-the source files each campaign ran against.
+## Experiment inventory
 
-## Table generators
+| Campaign | Runs | Simulator calls per run |
+|---|---:|---:|
+| Eight models × two targets × two profiles × 30 seeds | 960 | 40000 |
+| Independent CMA-ES: eight models × two targets × 30 seeds | 480 | 20000 |
+| Easy + three additional analytic paths + NACA0012 reference | 1200 | 20000 |
+| Penalty ablation | 240 | 20000 |
+| **Main model-level total** | **2880** | |
+| Separate repetition batches | 60 | 20000 |
+| Separate own-curve recovery diagnostics | 8 | 80000 |
+| Separate matched-budget QD component/grid runs | 240 | 40000 total across models |
 
-Every number in the manuscript tables comes from these, not from hand editing:
+Factorial checkpoints are dependent cumulative observations, not extra independent runs. Pilot seeds do not enter formal rates. NACA0012 is published reference geometry, not a measured mechanism trajectory. All failures keep their denominators. A minimum-RMS selected vector can differ from the retained strict vector; resolution sensitivity holds the selected vector fixed.
 
-- `tablas/aggregate_all_families.py` — all eight families on the medium target
-  (Table 9). Per-family candidates are selected by lowest RMS, the same rule
-  `extract_family_rows()` uses in the published statistical runner.
-- `tablas/make_qd_extension_table.py` — the three arms of the policy comparison
-  (Table 10), with Wilson intervals, Fisher exact tests and Holm adjustment
-  across the four comparisons of that table.
-- `tablas/make_packaging_table.py` — the two-by-two packaging design (Table 7).
-  The envelopes share seeds 1–30, so the within-family contrasts are **paired**:
-  exact McNemar for the rates, Wilcoxon signed-rank for the error. Between
-  families the samples are independent and Fisher is used.
+## Verify and reproduce
 
-## Data
+Clone this branch with its directory structure intact. `python verify_publication.py` uses only the Python standard library to verify the published revision manifest, exact budgets, core/QD source fingerprints and formal counts. It does not assert acceptance of the manuscript.
 
-`datos/` holds the per-seed outputs of every campaign reported in the paper,
-19.5 MB across 1,680 files, with a SHA-256 fingerprint per campaign in
-`datos/MANIFIESTO.json`. See `datos/README.md` for the layout and for which
-table each campaign feeds.
+The corrected numerical pipeline uses Python 3.12 and the pinned packages in `envio_Applied_Sciences/revision_2026/12_campanas_corregidas/requirements.lock.txt`. From `envio_Applied_Sciences/revision_2026/` run:
 
-## Verification
-
-`verificacion/verifica_wattII.py` re-simulates, in an independent process, the
-single Watt II design that meets the strict criterion in Table 9. It reproduces
-the archived errors exactly (RMS 0.6488 mm, maximum 1.5278 mm), which is what
-supports counting four strict-capable families rather than three.
-
-Note the parameter order: Watt II takes twelve variables and the archive columns
-are named `r_c` and `phi_c`. Building the vector with ten variables evaluates a
-different mechanism.
-
-## Running the campaigns on Windows
-
-Invoke the PowerShell launchers with `-Command`, not `-File`:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -Command "& '.\campanas\c5_medium_hard_por_familia.ps1' -Topologia gearedFiveBar -Perfil compact -Semillas (2..30) -Max 3"
+```text
+python 13_cierre_editorial/summarize_v2.py
+python 13_cierre_editorial/extended_analysis.py
+python 13_cierre_editorial/validate_resolution_v2.py
+python 13_cierre_editorial/render_tables_figures.py
+python 13_cierre_editorial/finish_diagnostics.py
+python 15_auditoria_reenvio/diagnose_models.py
+python 15_auditoria_reenvio/envelope_diagnostics.py
+python 15_auditoria_reenvio/editorial_tables.py
 ```
 
-With `-File`, arguments arrive as separate strings and an array parameter does
-not bind: `-Semillas 2,3` is read as the single seed 23.
+No new optimization is required to regenerate the analysis. Full run controllers and protocols are in `12_campanas_corregidas/`. The corrected Numba engine and original Python snapshot are included; the optional original C++ engine is unnecessary for this pipeline. Existing results reject incompatible source hashes. A new numerical replication should use a separate checkout and preserve supplied outputs as a reference.
 
-Long campaigns should run detached, with `utilidades/keep_awake.ps1` alongside
-them. It uses `SetThreadExecutionState`, which reverts on exit and does not
-alter the machine's power plan. Without it a suspended machine silently adds
-hours of wall-clock time; the runs survive suspension, but the wait does not.
+The canonical LaTeX paper and all tables/figures are included in `08_manuscript/`; compile there with pdfLaTeX twice. Journal correspondence and the original review reports are provided separately through the editorial submission, so private editorial builders/backups are not needed to reproduce the numerical evidence or compile the published paper. The highlighted PDF compares against the preserved local pre-review Applied Sciences PDF; it marks inserted/replaced words and retains the clean PDF's text and pagination.
 
-## Reproducibility notes
-
-- Campaign outputs are written to new directories per seed, so re-running never
-  overwrites an archived campaign.
-- All simulations, including the refinement stage, are counted and reported.
-- `utilidades/aplana_para_editorial_manager.py` flattens the manuscript sources
-  into a single directory, which Elsevier's submission system requires.
-
-## Licence
-
-MIT. See `LICENSE`. The code may be reused, modified and redistributed,
-including commercially, provided the copyright notice is retained.
-
-If you use it in academic work, please cite the accompanying paper.
-
+The existing repository MIT license covers the software and associated documentation. Third-party reference geometry retains its recorded source and provenance. This GitHub branch is a public access location and does not carry a DOI. Use a Git commit permalink for an immutable version. See `README_HISTORICAL.md` for the earlier campaign description.

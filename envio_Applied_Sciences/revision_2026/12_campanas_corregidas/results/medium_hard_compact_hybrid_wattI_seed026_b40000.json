@@ -1,0 +1,336 @@
+{
+  "name": "medium_hard_compact_hybrid_wattI_seed026_b40000",
+  "protocol": "revision-v2-cumulative-simulations",
+  "source_hash": "490872b5a8b8f912f4f4b56a47c4b1a75a73318363c7ce26b4c6504f7476b1fc",
+  "family": "wattI",
+  "seed": 26,
+  "profile": "compact",
+  "target": {
+    "target_source": "independent_fourier_medium_hard",
+    "target_mode": "medium_hard",
+    "generated_by_stephenson": false,
+    "application": "desktop_curve_tracing_and_low_force_dispensing_demonstrator",
+    "target_width_mm": 90.0,
+    "description": "35 percent interpolation between the moderate and high-curvature benchmarks",
+    "n_resampled_points": 120,
+    "complexity_metrics": {
+      "perimeter_mm": 268.9166240285176,
+      "perimeter_to_width": 2.9879624892057515,
+      "curvature_mean": 0.008027659577445972,
+      "curvature_p95": 0.019554160046633712,
+      "turning_energy": 0.006938243064968887,
+      "curvature_sign_changes": 6.0
+    },
+    "tolerance_rms_mm": 1.0,
+    "tolerance_max_mm": 2.0
+  },
+  "method": "hybrid",
+  "limit": 40000,
+  "simulations": 40000,
+  "valid": 30191,
+  "checkpoints": [
+    {
+      "simulations": 10000,
+      "valid": 3974,
+      "best_rms": {
+        "family": "wattI",
+        "x": [
+          85.0211687031728,
+          49.399588463929504,
+          158.75975212256293,
+          168.98450752825667,
+          34.639366838549584,
+          -2.831702793715806,
+          131.3678652829264,
+          68.26535768839786,
+          109.92936718085429,
+          103.50792862179208,
+          47.64384876192774,
+          5.997496073353901
+        ],
+        "rms_mm": 4.981736192205722,
+        "max_mm": 11.286455663909354,
+        "cost": 7.4689426916632184,
+        "strict": false,
+        "min_delta": 2933.872456264633,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": false,
+          "state_seam_mm": 6.039613253960852e-14,
+          "tracer_seam_mm": 1.5888218580782548e-14,
+          "link_residual_mm": 7.105427357601002e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            11.958026538046465,
+            14.91669805142805
+          ],
+          "min_angle_deg": 11.958026538046465,
+          "max_joint_step_mm": 0.7751772569480438,
+          "min_delta": 2929.005692299495
+        }
+      },
+      "best_cost": {
+        "family": "wattI",
+        "x": [
+          99.55275327168992,
+          44.777310653706145,
+          158.64073116482263,
+          131.1615874282973,
+          31.11815360743541,
+          -2.7081150791853283,
+          126.64467110136192,
+          54.49089032599831,
+          88.59046182418957,
+          132.5002844761073,
+          26.714684885568616,
+          -14.447645346696065
+        ],
+        "rms_mm": 5.128873181005345,
+        "max_mm": 10.13122836057438,
+        "cost": 7.361597487236629,
+        "strict": false,
+        "min_delta": 6742.241967344149,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": false,
+          "state_seam_mm": 3.1776437161565096e-14,
+          "tracer_seam_mm": 1.2080532582046505e-14,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            18.90671637399643,
+            51.50210665933928
+          ],
+          "min_angle_deg": 18.90671637399643,
+          "max_joint_step_mm": 0.41685330563595707,
+          "min_delta": 6742.241967344149
+        }
+      },
+      "best_strict": null,
+      "any_strict": false
+    },
+    {
+      "simulations": 20000,
+      "valid": 12871,
+      "best_rms": {
+        "family": "wattI",
+        "x": [
+          149.77312040461678,
+          67.01544505943463,
+          105.67836054364794,
+          112.25038585267173,
+          49.75021860976253,
+          -0.3716577121865268,
+          34.34409599729337,
+          89.99999991218681,
+          139.27349164661626,
+          130.90268579792942,
+          21.28119499124892,
+          -25.478420165334764
+        ],
+        "rms_mm": 1.5347311731555004,
+        "max_mm": 4.977625679651889,
+        "cost": 2.640632161553323,
+        "strict": false,
+        "min_delta": 2412.109814973241,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": false,
+          "state_seam_mm": 2.0097183471152322e-14,
+          "tracer_seam_mm": 7.105427357601002e-15,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            11.732350965670996,
+            11.511979564934265
+          ],
+          "min_angle_deg": 11.511979564934265,
+          "max_joint_step_mm": 1.1040020558920818,
+          "min_delta": 2412.109814973241
+        }
+      },
+      "best_cost": {
+        "family": "wattI",
+        "x": [
+          148.2934217660495,
+          66.93449005548665,
+          105.39757988980462,
+          111.0712806703661,
+          49.231698780244926,
+          -0.3620418615523231,
+          35.95341184024478,
+          89.99999999379669,
+          139.88251375586486,
+          134.40012464541803,
+          19.933875020676556,
+          -25.724506137525765
+        ],
+        "rms_mm": 1.5354007281589381,
+        "max_mm": 4.9603121145692395,
+        "cost": 2.6374925124718254,
+        "strict": false,
+        "min_delta": 2489.91181222029,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": false,
+          "state_seam_mm": 2.0097183471152322e-14,
+          "tracer_seam_mm": 1.5888218580782548e-14,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            12.280168408519975,
+            11.303589948091604
+          ],
+          "min_angle_deg": 11.303589948091604,
+          "max_joint_step_mm": 1.1374634332642197,
+          "min_delta": 2489.91181222029
+        }
+      },
+      "best_strict": null,
+      "any_strict": false
+    },
+    {
+      "simulations": 40000,
+      "valid": 30191,
+      "best_rms": {
+        "family": "wattI",
+        "x": [
+          149.77312040461678,
+          67.01544505943463,
+          105.67836054364794,
+          112.25038585267173,
+          49.75021860976253,
+          -0.3716577121865268,
+          34.34409599729337,
+          89.99999991218681,
+          139.27349164661626,
+          130.90268579792942,
+          21.28119499124892,
+          -25.478420165334764
+        ],
+        "rms_mm": 1.5347311731555004,
+        "max_mm": 4.977625679651889,
+        "cost": 2.640632161553323,
+        "strict": false,
+        "min_delta": 2412.109814973241,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": false,
+          "state_seam_mm": 2.0097183471152322e-14,
+          "tracer_seam_mm": 7.105427357601002e-15,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            11.732350965670996,
+            11.511979564934265
+          ],
+          "min_angle_deg": 11.511979564934265,
+          "max_joint_step_mm": 1.1040020558920818,
+          "min_delta": 2412.109814973241
+        }
+      },
+      "best_cost": {
+        "family": "wattI",
+        "x": [
+          148.2934217660495,
+          66.93449005548665,
+          105.39757988980462,
+          111.0712806703661,
+          49.231698780244926,
+          -0.3620418615523231,
+          35.95341184024478,
+          89.99999999379669,
+          139.88251375586486,
+          134.40012464541803,
+          19.933875020676556,
+          -25.724506137525765
+        ],
+        "rms_mm": 1.5354007281589381,
+        "max_mm": 4.9603121145692395,
+        "cost": 2.6374925124718254,
+        "strict": false,
+        "min_delta": 2489.91181222029,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": false,
+          "state_seam_mm": 2.0097183471152322e-14,
+          "tracer_seam_mm": 1.5888218580782548e-14,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            12.280168408519975,
+            11.303589948091604
+          ],
+          "min_angle_deg": 11.303589948091604,
+          "max_joint_step_mm": 1.1374634332642197,
+          "min_delta": 2489.91181222029
+        }
+      },
+      "best_strict": null,
+      "any_strict": false
+    }
+  ],
+  "bounds": {
+    "names": [
+      "L0",
+      "L2",
+      "L3",
+      "L4",
+      "r_c",
+      "phi_c",
+      "gx",
+      "gy",
+      "L5",
+      "L6",
+      "pu",
+      "pv"
+    ],
+    "lb": [
+      35.0,
+      12.0,
+      20.0,
+      20.0,
+      0.0,
+      -3.141592653589793,
+      -40.0,
+      -90.0,
+      20.0,
+      20.0,
+      -50.0,
+      -80.0
+    ],
+    "ub": [
+      160.0,
+      95.0,
+      180.0,
+      180.0,
+      150.0,
+      3.141592653589793,
+      210.0,
+      90.0,
+      180.0,
+      180.0,
+      180.0,
+      80.0
+    ]
+  },
+  "gear_ratios": null,
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "seconds": 18.29680371284485
+}

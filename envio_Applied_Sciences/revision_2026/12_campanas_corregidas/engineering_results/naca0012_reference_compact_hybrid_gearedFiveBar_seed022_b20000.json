@@ -1,0 +1,406 @@
+{
+  "name": "naca0012_reference_compact_hybrid_gearedFiveBar_seed022_b20000",
+  "protocol": "revision-v2-cumulative-simulations",
+  "source_hash": "490872b5a8b8f912f4f4b56a47c4b1a75a73318363c7ce26b4c6504f7476b1fc",
+  "family": "gearedFiveBar",
+  "seed": 22,
+  "profile": "compact",
+  "target": {
+    "target_mode": "naca0012_reference",
+    "source": "https://tmbwg.github.io/turbmodels/naca0012_val.html",
+    "download_url": "https://tmbwg.github.io/turbmodels/NACA0012_grids/n0012points_superbig_clust_fix.dat",
+    "source_context": "NASA-linked Turbulence Modeling Resource, altered sharp-trailing-edge NACA0012 reference geometry",
+    "raw_sha256": "74e147db4fa052be7ab79465a756c55b39b1786bfd7141a86257e89586728ae1",
+    "target_adapter_sha256": "ee7f0bd62519df985222cc09b24eb22346a70bb7c4f89a97cf37c762e42cc711",
+    "raw_points": 12299,
+    "raw_closed": true,
+    "width_mm": 90.0,
+    "measured_trajectory": false,
+    "preprocessing": "drop z=0, preserve contour order, closed arclength resample, center, normalize width; no smoothing or fitted mechanism"
+  },
+  "method": "hybrid",
+  "limit": 20000,
+  "simulations": 20000,
+  "valid": 17793,
+  "checkpoints": [
+    {
+      "simulations": 5000,
+      "valid": 3505,
+      "best_rms": {
+        "family": "gearedFiveBar",
+        "x": [
+          144.60788922828817,
+          25.086033833287203,
+          12.798273988717092,
+          136.8838625178326,
+          146.9315036320413,
+          -1.0,
+          2.347839484526051,
+          114.8538696851513,
+          1.543346805908244
+        ],
+        "rms_mm": 0.4672720053236375,
+        "max_mm": 0.7706827416440065,
+        "cost": 0.7027858586956353,
+        "strict": true,
+        "min_delta": 14.123554029442431,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": true,
+          "state_seam_mm": 7.105427357601002e-15,
+          "tracer_seam_mm": 7.105427357601002e-15,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            45.47168450054642
+          ],
+          "min_angle_deg": 45.47168450054642,
+          "max_joint_step_mm": 0.1748412122386679,
+          "min_delta": 0.5811212767600153
+        }
+      },
+      "best_cost": {
+        "family": "gearedFiveBar",
+        "x": [
+          144.60788922828817,
+          25.086033833287203,
+          12.798273988717092,
+          136.8838625178326,
+          146.9315036320413,
+          -1.0,
+          2.347839484526051,
+          114.8538696851513,
+          1.543346805908244
+        ],
+        "rms_mm": 0.4672720053236375,
+        "max_mm": 0.7706827416440065,
+        "cost": 0.7027858586956353,
+        "strict": true,
+        "min_delta": 14.123554029442431,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": true,
+          "state_seam_mm": 7.105427357601002e-15,
+          "tracer_seam_mm": 7.105427357601002e-15,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            45.47168450054642
+          ],
+          "min_angle_deg": 45.47168450054642,
+          "max_joint_step_mm": 0.1748412122386679,
+          "min_delta": 0.5811212767600153
+        }
+      },
+      "best_strict": {
+        "family": "gearedFiveBar",
+        "x": [
+          144.60788922828817,
+          25.086033833287203,
+          12.798273988717092,
+          136.8838625178326,
+          146.9315036320413,
+          -1.0,
+          2.347839484526051,
+          114.8538696851513,
+          1.543346805908244
+        ],
+        "rms_mm": 0.4672720053236375,
+        "max_mm": 0.7706827416440065,
+        "cost": 0.7027858586956353,
+        "strict": true,
+        "min_delta": 14.123554029442431,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": true,
+          "state_seam_mm": 7.105427357601002e-15,
+          "tracer_seam_mm": 7.105427357601002e-15,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            45.47168450054642
+          ],
+          "min_angle_deg": 45.47168450054642,
+          "max_joint_step_mm": 0.1748412122386679,
+          "min_delta": 0.5811212767600153
+        }
+      },
+      "any_strict": true
+    },
+    {
+      "simulations": 10000,
+      "valid": 8055,
+      "best_rms": {
+        "family": "gearedFiveBar",
+        "x": [
+          146.48444071631556,
+          26.031538960412846,
+          13.138935839229363,
+          138.87153343192864,
+          147.29855087095098,
+          -1.0,
+          2.431574338403963,
+          117.56909961971697,
+          1.5530123197821617
+        ],
+        "rms_mm": 0.20733245586115517,
+        "max_mm": 0.6458831164900458,
+        "cost": 0.4261222996586333,
+        "strict": true,
+        "min_delta": 7.872749698073548,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": true,
+          "state_seam_mm": 2.929642751054232e-14,
+          "tracer_seam_mm": 2.929642751054232e-14,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            45.14201431523684
+          ],
+          "min_angle_deg": 45.14201431523684,
+          "max_joint_step_mm": 0.17542018957231767,
+          "min_delta": 1.0807917360993429
+        }
+      },
+      "best_cost": {
+        "family": "gearedFiveBar",
+        "x": [
+          146.6740630395818,
+          26.242195978489242,
+          13.286653519965396,
+          139.36430589412498,
+          147.4408278741791,
+          -1.0,
+          2.4566411776506873,
+          118.36770401473447,
+          1.558175815783343
+        ],
+        "rms_mm": 0.21402641792294558,
+        "max_mm": 0.5854667876013465,
+        "cost": 0.40533153593773374,
+        "strict": true,
+        "min_delta": 16.76001355031366,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": true,
+          "state_seam_mm": 7.105427357601002e-15,
+          "tracer_seam_mm": 7.105427357601002e-15,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            44.90570443997626
+          ],
+          "min_angle_deg": 44.90570443997626,
+          "max_joint_step_mm": 0.1754672414663063,
+          "min_delta": 0.7921508243576767
+        }
+      },
+      "best_strict": {
+        "family": "gearedFiveBar",
+        "x": [
+          146.6740630395818,
+          26.242195978489242,
+          13.286653519965396,
+          139.36430589412498,
+          147.4408278741791,
+          -1.0,
+          2.4566411776506873,
+          118.36770401473447,
+          1.558175815783343
+        ],
+        "rms_mm": 0.21402641792294558,
+        "max_mm": 0.5854667876013465,
+        "cost": 0.40533153593773374,
+        "strict": true,
+        "min_delta": 16.76001355031366,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": true,
+          "state_seam_mm": 7.105427357601002e-15,
+          "tracer_seam_mm": 7.105427357601002e-15,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            44.90570443997626
+          ],
+          "min_angle_deg": 44.90570443997626,
+          "max_joint_step_mm": 0.1754672414663063,
+          "min_delta": 0.7921508243576767
+        }
+      },
+      "any_strict": true
+    },
+    {
+      "simulations": 20000,
+      "valid": 17793,
+      "best_rms": {
+        "family": "gearedFiveBar",
+        "x": [
+          159.99793928109722,
+          29.963600395591182,
+          34.3540168498613,
+          20.000000000147406,
+          167.96180900852798,
+          1.0,
+          -0.137418166809421,
+          149.99999999999997,
+          -2.1658616008299125
+        ],
+        "rms_mm": 0.1435844525598562,
+        "max_mm": 0.44039588805495616,
+        "cost": 0.2488122972871329,
+        "strict": true,
+        "min_delta": 141.00936554125178,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": true,
+          "state_seam_mm": 1.4210854715202004e-14,
+          "tracer_seam_mm": 1.4210854715202004e-14,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            42.37340202819665
+          ],
+          "min_angle_deg": 42.37340202819665,
+          "max_joint_step_mm": 0.18262029640339225,
+          "min_delta": 141.0093655412517
+        }
+      },
+      "best_cost": {
+        "family": "gearedFiveBar",
+        "x": [
+          155.71405063488834,
+          30.110689532672342,
+          34.487873066933865,
+          20.00014879373079,
+          163.4825308507592,
+          1.0,
+          -0.13820647929754432,
+          149.9969805299488,
+          -2.153389259246115
+        ],
+        "rms_mm": 0.14365568516450852,
+        "max_mm": 0.4291302234265302,
+        "cost": 0.2464219431210589,
+        "strict": true,
+        "min_delta": 143.0645575528461,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": true,
+          "state_seam_mm": 7.374991911261379e-15,
+          "tracer_seam_mm": 7.105427357601002e-15,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            42.973034095456995
+          ],
+          "min_angle_deg": 42.973034095456995,
+          "max_joint_step_mm": 0.1824364380253992,
+          "min_delta": 143.06455755284605
+        }
+      },
+      "best_strict": {
+        "family": "gearedFiveBar",
+        "x": [
+          155.71405063488834,
+          30.110689532672342,
+          34.487873066933865,
+          20.00014879373079,
+          163.4825308507592,
+          1.0,
+          -0.13820647929754432,
+          149.9969805299488,
+          -2.153389259246115
+        ],
+        "rms_mm": 0.14365568516450852,
+        "max_mm": 0.4291302234265302,
+        "cost": 0.2464219431210589,
+        "strict": true,
+        "min_delta": 143.0645575528461,
+        "physical": {
+          "n": 1920,
+          "solver_valid": true,
+          "motion_valid": true,
+          "quality30": true,
+          "state_seam_mm": 7.374991911261379e-15,
+          "tracer_seam_mm": 7.105427357601002e-15,
+          "link_residual_mm": 5.684341886080802e-14,
+          "branch_constant": true,
+          "min_acute_angles_deg": [
+            42.973034095456995
+          ],
+          "min_angle_deg": 42.973034095456995,
+          "max_joint_step_mm": 0.1824364380253992,
+          "min_delta": 143.06455755284605
+        }
+      },
+      "any_strict": true
+    }
+  ],
+  "bounds": {
+    "names": [
+      "L0",
+      "L2",
+      "L4",
+      "L3",
+      "L5",
+      "ratio",
+      "phase",
+      "r_p",
+      "phi_p"
+    ],
+    "lb": [
+      35.0,
+      10.0,
+      10.0,
+      20.0,
+      20.0,
+      -3.0,
+      -3.141592653589793,
+      0.0,
+      -3.141592653589793
+    ],
+    "ub": [
+      160.0,
+      95.0,
+      95.0,
+      180.0,
+      180.0,
+      3.0,
+      3.141592653589793,
+      150.0,
+      3.141592653589793
+    ]
+  },
+  "gear_ratios": [
+    -3.0,
+    -2.0,
+    -1.0,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "seconds": 11.183237791061401
+}
