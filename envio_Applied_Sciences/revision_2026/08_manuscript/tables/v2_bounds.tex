@@ -1,84 +1,85 @@
 \small
-\begin{longtable}{@{}llrrrr@{}}
-\caption{Complete effective bounds in the revised experiments.}\label{tab:v2_bounds}\\
-\toprule Model & Variable & Compact lower & Upper & Relaxed lower & Upper \\ \midrule\endfirsthead
-\toprule Model & Variable & Compact lower & Upper & Relaxed lower & Upper \\ \midrule\endhead
-F4 & \texttt{L1} & 35 & 150 & 35 & 234 \\
-F4 & \texttt{L2} & 12 & 90 & 12 & 156 \\
-F4 & \texttt{L3} & 20 & 165 & 20 & 260 \\
-F4 & \texttt{L4} & 20 & 165 & 20 & 260 \\
-F4 & \texttt{rP} & 0 & 150 & 0 & 286 \\
-F4 & \texttt{phiP} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ \\
+\setlength{\tabcolsep}{3.5pt}
+\begin{longtable}{@{}llrrrrp{4.3cm}@{}}
+\caption{Complete effective bounds and variable meanings in the revised experiments.}\label{tab:v2_bounds}\\
+\toprule Model & Variable & Compact lower & Upper & Relaxed lower & Upper & Meaning \\ \midrule\endfirsthead
+\toprule Model & Variable & Compact lower & Upper & Relaxed lower & Upper & Meaning \\ \midrule\endhead
+F4 & \texttt{L1} & 35 & 150 & 35 & 234 & Ground-pivot distance $|O_2O_4|$ \\
+F4 & \texttt{L2} & 12 & 90 & 12 & 156 & Crank length $|O_2A|$ \\
+F4 & \texttt{L3} & 20 & 165 & 20 & 260 & Coupler length $|AB|$ \\
+F4 & \texttt{L4} & 20 & 165 & 20 & 260 & Rocker length $|O_4B|$ \\
+F4 & \texttt{rP} & 0 & 150 & 0 & 286 & Tracer radial offset on coupler \\
+F4 & \texttt{phiP} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ & Tracer angular offset on coupler \\
 \addlinespace
-SC & \texttt{r} & 8 & 80 & 8 & 156 \\
-SC & \texttt{l} & 25 & 180 & 25 & 260 \\
-SC & \texttt{q} & -0.3 & 1.35 & -0.3 & 1.35 \\
-SC & \texttt{h} & -60 & 60 & -100 & 100 \\
-SC & \texttt{x0} & -30 & 60 & -70 & 100 \\
+SC & \texttt{r} & 8 & 80 & 8 & 156 & Crank radius \\
+SC & \texttt{l} & 25 & 180 & 25 & 260 & Connecting-rod length $|AB|$ \\
+SC & \texttt{q} & -0.3 & 1.35 & -0.3 & 1.35 & Tracer position along rod (fraction of $\ell$) \\
+SC & \texttt{h} & -60 & 60 & -100 & 100 & Tracer offset normal to rod \\
+SC & \texttt{x0} & -30 & 60 & -70 & 100 & Translation of slider line (redundant) \\
 \addlinespace
-CD-G & \texttt{L0} & 35 & 160 & 35 & 234 \\
-CD-G & \texttt{L2} & 12 & 95 & 12 & 156 \\
-CD-G & \texttt{L3} & 20 & 180 & 20 & 260 \\
-CD-G & \texttt{L4} & 20 & 180 & 20 & 260 \\
-CD-G & \texttt{r\_c} & 0 & 150 & 0 & 286 \\
-CD-G & \texttt{phi\_c} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ \\
-CD-G & \texttt{gx} & -40 & 210 & -100 & 325 \\
-CD-G & \texttt{gy} & -90 & 90 & -182 & 182 \\
-CD-G & \texttt{L5} & 20 & 180 & 20 & 260 \\
-CD-G & \texttt{L6} & 20 & 180 & 20 & 260 \\
-CD-G & \texttt{pu} & -50 & 180 & -143 & 286 \\
-CD-G & \texttt{pv} & -80 & 80 & -156 & 156 \\
+CD-G & \texttt{L0} & 35 & 160 & 35 & 234 & Ground-pivot distance $|O_2O_4|$ \\
+CD-G & \texttt{L2} & 12 & 95 & 12 & 156 & Crank length $|O_2A|$ \\
+CD-G & \texttt{L3} & 20 & 180 & 20 & 260 & Coupler length $|AB|$ \\
+CD-G & \texttt{L4} & 20 & 180 & 20 & 260 & Rocker length $|O_4B|$ \\
+CD-G & \texttt{r\_c} & 0 & 150 & 0 & 286 & Point-$C$ radial offset on coupler \\
+CD-G & \texttt{phi\_c} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ & Point-$C$ angular offset on coupler \\
+CD-G & \texttt{gx} & -40 & 210 & -100 & 325 & $x$-coordinate of ground pivot $G$ \\
+CD-G & \texttt{gy} & -90 & 90 & -182 & 182 & $y$-coordinate of ground pivot $G$ \\
+CD-G & \texttt{L5} & 20 & 180 & 20 & 260 & Second-dyad link length $|CD|$ \\
+CD-G & \texttt{L6} & 20 & 180 & 20 & 260 & Second-dyad link length $|DG|$ \\
+CD-G & \texttt{pu} & -50 & 180 & -143 & 286 & Tracer offset along $CD$ \\
+CD-G & \texttt{pv} & -80 & 80 & -156 & 156 & Tracer offset normal to $CD$ \\
 \addlinespace
-RC-G & \texttt{L0} & 35 & 160 & 35 & 234 \\
-RC-G & \texttt{L2} & 12 & 95 & 12 & 156 \\
-RC-G & \texttt{L3} & 20 & 180 & 20 & 260 \\
-RC-G & \texttt{L4} & 20 & 180 & 20 & 260 \\
-RC-G & \texttt{r\_c} & 0 & 150 & 0 & 286 \\
-RC-G & \texttt{phi\_c} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ \\
-RC-G & \texttt{gx} & -40 & 210 & -100 & 325 \\
-RC-G & \texttt{gy} & -90 & 90 & -182 & 182 \\
-RC-G & \texttt{L5} & 20 & 180 & 20 & 260 \\
-RC-G & \texttt{L6} & 20 & 180 & 20 & 260 \\
-RC-G & \texttt{pu} & -50 & 180 & -143 & 286 \\
-RC-G & \texttt{pv} & -80 & 80 & -156 & 156 \\
+RC-G & \texttt{L0} & 35 & 160 & 35 & 234 & Ground-pivot distance $|O_2O_4|$ \\
+RC-G & \texttt{L2} & 12 & 95 & 12 & 156 & Crank length $|O_2A|$ \\
+RC-G & \texttt{L3} & 20 & 180 & 20 & 260 & Coupler length $|AB|$ \\
+RC-G & \texttt{L4} & 20 & 180 & 20 & 260 & Rocker length $|O_4B|$ \\
+RC-G & \texttt{r\_c} & 0 & 150 & 0 & 286 & Point-$C$ radial offset on rocker $BO_4$ \\
+RC-G & \texttt{phi\_c} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ & Point-$C$ angular offset on rocker $BO_4$ \\
+RC-G & \texttt{gx} & -40 & 210 & -100 & 325 & $x$-coordinate of ground pivot $G$ \\
+RC-G & \texttt{gy} & -90 & 90 & -182 & 182 & $y$-coordinate of ground pivot $G$ \\
+RC-G & \texttt{L5} & 20 & 180 & 20 & 260 & Second-dyad link length $|CD|$ \\
+RC-G & \texttt{L6} & 20 & 180 & 20 & 260 & Second-dyad link length $|DG|$ \\
+RC-G & \texttt{pu} & -50 & 180 & -143 & 286 & Tracer offset along $CD$ \\
+RC-G & \texttt{pv} & -80 & 80 & -156 & 156 & Tracer offset normal to $CD$ \\
 \addlinespace
-A-O4 & \texttt{L0} & 35 & 160 & 35 & 234 \\
-A-O4 & \texttt{L2} & 12 & 95 & 12 & 156 \\
-A-O4 & \texttt{L3} & 20 & 180 & 20 & 260 \\
-A-O4 & \texttt{L4} & 20 & 180 & 20 & 260 \\
-A-O4 & \texttt{L5} & 20 & 180 & 20 & 260 \\
-A-O4 & \texttt{L6} & 20 & 180 & 20 & 260 \\
-A-O4 & \texttt{pu} & -50 & 180 & -143 & 286 \\
-A-O4 & \texttt{pv} & -80 & 80 & -156 & 156 \\
+A-O4 & \texttt{L0} & 35 & 160 & 35 & 234 & Ground-pivot distance $|O_2O_4|$ \\
+A-O4 & \texttt{L2} & 12 & 95 & 12 & 156 & Crank length $|O_2A|$ \\
+A-O4 & \texttt{L3} & 20 & 180 & 20 & 260 & Coupler length $|AB|$ \\
+A-O4 & \texttt{L4} & 20 & 180 & 20 & 260 & Rocker length $|O_4B|$ \\
+A-O4 & \texttt{L5} & 20 & 180 & 20 & 260 & Second-dyad link length $|AD|$ \\
+A-O4 & \texttt{L6} & 20 & 180 & 20 & 260 & Second-dyad link length $|DO_4|$ \\
+A-O4 & \texttt{pu} & -50 & 180 & -143 & 286 & Tracer offset along $AD$ \\
+A-O4 & \texttt{pv} & -80 & 80 & -156 & 156 & Tracer offset normal to $AD$ \\
 \addlinespace
-B-O2 & \texttt{L0} & 35 & 160 & 35 & 234 \\
-B-O2 & \texttt{L2} & 12 & 95 & 12 & 156 \\
-B-O2 & \texttt{L3} & 20 & 180 & 20 & 260 \\
-B-O2 & \texttt{L4} & 20 & 180 & 20 & 260 \\
-B-O2 & \texttt{L5} & 20 & 180 & 20 & 260 \\
-B-O2 & \texttt{L6} & 20 & 180 & 20 & 260 \\
-B-O2 & \texttt{pu} & -50 & 180 & -143 & 286 \\
-B-O2 & \texttt{pv} & -80 & 80 & -156 & 156 \\
+B-O2 & \texttt{L0} & 35 & 160 & 35 & 234 & Ground-pivot distance $|O_2O_4|$ \\
+B-O2 & \texttt{L2} & 12 & 95 & 12 & 156 & Crank length $|O_2A|$ \\
+B-O2 & \texttt{L3} & 20 & 180 & 20 & 260 & Coupler length $|AB|$ \\
+B-O2 & \texttt{L4} & 20 & 180 & 20 & 260 & Rocker length $|O_4B|$ \\
+B-O2 & \texttt{L5} & 20 & 180 & 20 & 260 & Second-dyad link length $|BD|$ \\
+B-O2 & \texttt{L6} & 20 & 180 & 20 & 260 & Second-dyad link length $|DO_2|$ \\
+B-O2 & \texttt{pu} & -50 & 180 & -143 & 286 & Tracer offset along $BD$ \\
+B-O2 & \texttt{pv} & -80 & 80 & -156 & 156 & Tracer offset normal to $BD$ \\
 \addlinespace
-C-O4 & \texttt{L0} & 35 & 160 & 35 & 234 \\
-C-O4 & \texttt{L2} & 12 & 95 & 12 & 156 \\
-C-O4 & \texttt{L3} & 20 & 180 & 20 & 260 \\
-C-O4 & \texttt{L4} & 20 & 180 & 20 & 260 \\
-C-O4 & \texttt{r\_c} & 0 & 150 & 0 & 286 \\
-C-O4 & \texttt{phi\_c} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ \\
-C-O4 & \texttt{L5} & 20 & 180 & 20 & 260 \\
-C-O4 & \texttt{L6} & 20 & 180 & 20 & 260 \\
-C-O4 & \texttt{pu} & -30 & 180 & -143 & 286 \\
-C-O4 & \texttt{pv} & -70 & 70 & -156 & 156 \\
+C-O4 & \texttt{L0} & 35 & 160 & 35 & 234 & Ground-pivot distance $|O_2O_4|$ \\
+C-O4 & \texttt{L2} & 12 & 95 & 12 & 156 & Crank length $|O_2A|$ \\
+C-O4 & \texttt{L3} & 20 & 180 & 20 & 260 & Coupler length $|AB|$ \\
+C-O4 & \texttt{L4} & 20 & 180 & 20 & 260 & Rocker length $|O_4B|$ \\
+C-O4 & \texttt{r\_c} & 0 & 150 & 0 & 286 & Point-$C$ radial offset on coupler \\
+C-O4 & \texttt{phi\_c} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ & Point-$C$ angular offset on coupler \\
+C-O4 & \texttt{L5} & 20 & 180 & 20 & 260 & Second-dyad link length $|CD|$ \\
+C-O4 & \texttt{L6} & 20 & 180 & 20 & 260 & Second-dyad link length $|DO_4|$ \\
+C-O4 & \texttt{pu} & -30 & 180 & -143 & 286 & Tracer offset along $CD$ \\
+C-O4 & \texttt{pv} & -70 & 70 & -156 & 156 & Tracer offset normal to $CD$ \\
 \addlinespace
-G5 & \texttt{L0} & 35 & 160 & 35 & 234 \\
-G5 & \texttt{L2} & 10 & 95 & 10 & 156 \\
-G5 & \texttt{L4} & 10 & 95 & 10 & 260 \\
-G5 & \texttt{L3} & 20 & 180 & 20 & 260 \\
-G5 & \texttt{L5} & 20 & 180 & 20 & 260 \\
-G5 & \texttt{ratio} & -3 & 3 & -3 & 3 \\
-G5 & \texttt{phase} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ \\
-G5 & \texttt{r\_p} & 0 & 150 & 0 & 286 \\
-G5 & \texttt{phi\_p} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ \\
+G5 & \texttt{L0} & 35 & 160 & 35 & 234 & Ground-pivot distance $|O_2O_4|$ \\
+G5 & \texttt{L2} & 10 & 95 & 10 & 156 & Crank length $|O_2A|$ \\
+G5 & \texttt{L4} & 10 & 95 & 10 & 260 & Second crank length $|O_4B|$ \\
+G5 & \texttt{L3} & 20 & 180 & 20 & 260 & Link length $|AC|$ \\
+G5 & \texttt{L5} & 20 & 180 & 20 & 260 & Link length $|BC|$ \\
+G5 & \texttt{ratio} & -3 & 3 & -3 & 3 & Gear ratio $\rho$ \\
+G5 & \texttt{phase} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ & Phase angle $\phi$ \\
+G5 & \texttt{r\_p} & 0 & 150 & 0 & 286 & Tracer radial offset on link $AC$ \\
+G5 & \texttt{phi\_p} & $-\pi$ & $\pi$ & $-\pi$ & $\pi$ & Tracer angular offset on link $AC$ \\
 \addlinespace
 \bottomrule\end{longtable}\normalsize
